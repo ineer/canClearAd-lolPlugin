@@ -1,0 +1,21 @@
+{
+	"manifest_version": 2,
+	"name": "canClearAd - lol plugin",
+	"version": "0.0.1",
+	"description": "canClearAd的额外插件用于lol.qq.com的特殊规则",
+	"icons": {
+		"128": "images/icon128.png"
+	},
+	"content_scripts": [
+		{
+			"matches": ["http://lol.qq.com/*", "https://lol.qq.com/*", "http://*.loldk.com/*", "https://*.loldk.com/*", "http://lol.uuu9.com/*", "https://lol.uuu9.com/*", "http://lol.tuwan.com/*", "https://lol.tuwan.com/*"],
+			"js": ["js/init.js"]
+		}
+	],
+	"permissions": [
+		"http://*/*",
+		"https://*/*"
+	],
+  "author": "https://github.com/ineer",
+  "homepage_url": "https://github.com/ineer/canClearAd-lolPlugin"
+}
